@@ -41,7 +41,7 @@ class ModelTrainer:
                 "Random Forest": RandomForestRegressor(),
                 # "Decision Tree": DecisionTreeRegressor(),
                 # "Gradient Boosting": GradientBoostingRegressor(),
-                "Linear Regression": LinearRegression(),
+                # "Linear Regression": LinearRegression(),
                 # "XGBRegressor": XGBRegressor(),
                 # "CatBoosting Regressor": CatBoostRegressor(verbose=False),
                 # "AdaBoost Regressor": AdaBoostRegressor(),
@@ -56,7 +56,7 @@ class ModelTrainer:
                     # 'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
                  
                     #'max_features':['sqrt','log2',None],
-                    'n_estimators': [200]
+                    'n_estimators': [128]
                 },
                 # "Gradient Boosting":{
                 #     'loss':['squared_error', 'huber', 'absolute_error', 'quantile'],
@@ -66,7 +66,7 @@ class ModelTrainer:
                 #     # 'max_features':['auto','sqrt','log2'],
                 #     'n_estimators': [8,16,32,64,128,256]
                 # },
-                "Linear Regression":{}
+                # "Linear Regression":{}
                 # "XGBRegressor":{
                 #     'learning_rate':[.1,.01,.05,.001],
                 #     'n_estimators': [8,16,32,64,128,256]
