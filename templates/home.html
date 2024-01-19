@@ -1,0 +1,77 @@
+<html>
+
+<body>
+    <div class="login">
+        <h1>Bike Rental Prediction</h1>
+
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <h1>
+                <legend>Bike Rental Prediction</legend>
+            </h1>
+            <div class="mb-3">
+                <label class="form-label">Season</label>
+                <input class="form-control" type="number" name="season" placeholder="Enter Season" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Year</label>
+                <input class="form-control" type="number" name="yr" placeholder="Enter Year" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Month</label>
+                <input class="form-control" type="number" name="mnth" placeholder="Enter Month" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Holiday</label>
+                <input class="form-control" type="number" name="holiday" placeholder="Enter Holiday" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Weekday</label>
+                <input class="form-control" type="number" name="weekday" placeholder="Enter Weekday" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Workingday</label>
+                <input class="form-control" type="number" name="workingday" placeholder="Enter Workingday" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Weather Situation</label>
+                <input class="form-control" type="number" name="weathersit" placeholder="Enter Weather Situation" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Temperature</label>
+                <input class="form-control" type="number" name="temp" placeholder="Enter Temperature" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Feels-like Temperature</label>
+                <input class="form-control" type="number" name="atemp" placeholder="Enter Feels-like Temperature"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Humidity</label>
+                <input class="form-control" type="number" name="hum" placeholder="Enter Humidity" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Wind Speed</label>
+                <input class="form-control" type="number" name="windspeed" placeholder="Enter Wind Speed" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Casual Rentals</label>
+                <input class="form-control" type="number" name="casual" placeholder="Enter Casual Rentals" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Registered Rentals</label>
+                <input class="form-control" type="number" name="registered" placeholder="Enter Registered Rentals"
+                    required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Total Rentals</label>
+                <input class="form-control" type="number" name="cnt" placeholder="Enter Total Rentals" required />
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict Bike Rentals" required />
+            </div>
+        </form>
+        <h2>
+            THE prediction is {{results}}
+        </h2>
+    <body>
+</html>
