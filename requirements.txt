@@ -24,4 +24,5 @@ scipy
 Flask
 Flask-Cors
 gdown
+dill
 -e .

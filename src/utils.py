@@ -1,9 +1,9 @@
-#common functionality of entire project 
+import os
 import sys
+
 import numpy as np 
-import pandas as pd 
-import os 
-import dill #also used for getting pickle model
+import pandas as pd
+import dill
 import pickle
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
